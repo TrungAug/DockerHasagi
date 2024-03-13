@@ -16,9 +16,9 @@ public class Bcrypt {
     }
 
     public static void main(String[] args) {
-        String userInputPassword = "password123";
+        String userInputPassword = "Password123";
         String hashedPasswordInDatabase = hashPassword(userInputPassword);
-        String userInputLoginPassword = "password123";
+        String userInputLoginPassword = "Password123";
         boolean passwordMatch = checkPassword(userInputLoginPassword, hashedPasswordInDatabase);
         if (passwordMatch) {
             System.out.println("Mật khẩu đúng. Đăng nhập thành công!");
